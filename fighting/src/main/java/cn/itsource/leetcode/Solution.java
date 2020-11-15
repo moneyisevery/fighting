@@ -1,4 +1,4 @@
-package cn.itsource.likou;
+package cn.itsource.leetcode;
 
 class Solution {
     public static boolean judgeCircle(String moves) {

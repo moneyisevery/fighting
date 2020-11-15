@@ -1,4 +1,4 @@
-package cn.itsource.likou;
+package cn.itsource.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -19,12 +19,9 @@ public class Sum {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         //数组遍历
         for (int i = 0; i < nums.length; i++) {
-            //判断目标值减去当前循环值  map是否有
             if (hashMap.containsKey(target-nums[i])){
-                //减去后的值在原数组中的索引   和当前索引
                 return new int[]{hashMap.get(target-nums[i]),i};
             }
-            //没有则放入map
             hashMap.put(nums[i],i);
         }
         return new int[0];
